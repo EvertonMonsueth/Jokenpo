@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");/* link para imagem de fundo
+    seja trocada */
+    background-size: cover; /*estica a imgagem por toda tela*/
+    display: flex;/*ativa super poderes*/
+    justify-content: center;/*alinha o body na horizontal*/
+    align-items: center;/*alinha os itens do body na vertical*/
+    min-height: 100vh;/*faz o body ocupar a tela 100%*/
+}
+.container {
+    padding:  20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex; /*Alinha os objetos e por padrao horizontal*/
+    flex-direction: column;/*Alinha os objetos do display-flex em colunas*/
+    align-items: center;/*centraliza na vertical*/
+    justify-content: center;/*centraliza na horizontal*/
+}
+.buttons {
+    margin: 30px 0;/*margem em cima e em baixo 30px, nas laterais 0px*/
+    display: flex;/*super poderes*/
+    gap: 20px; /*Cria espaços entre os itens*/
+
+}
+
+button {
+    padding: 10px;
+    font-size: 100px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.9s ease-in-out;/*transição de opacidade 
+    demora 0.5 segundos para acontecer*/
+}
+button:hover {
+    opacity: 0.5;
+}
+#pedra{
+    background-color: blue;
+}
+#papel{
+    background-color: rgb(255, 0, 166);
+}
+#tesoura{
+    background-color: rgb(235, 241, 49);
+}
+p{
+    font-weight:  bold;/*define espesura da fonte, bold = negrito tipo uns 700*/
+    margin-bottom: 10px;/*Define espaço entre os paragrafos <p> */
+}
+.suaPontuacao span{
+    color: blue;
+}
+.maquinaPontuacao span{
+    color: rgb(255, 4, 0);
+}
